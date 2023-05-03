@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="ExtraText">
+
+
+    <item android:id="@+id/nav_home"
+        android:icon="@drawable/home_page_icon"
+        android:title="Home Page"
+        app:cnb_iconColor="@color/white"/>
+    <item android:id="@+id/nav_add"
+        android:icon="@drawable/add_photo_icon"
+        android:title="Add New Photo"
+        app:cnb_iconColor="@color/white"/>
+    <item android:id="@+id/nav_exit"
+        android:icon="@drawable/exit_icon"
+        android:title="Sign Out"
+        app:cnb_iconColor="@color/white"/>
+
+</menu>

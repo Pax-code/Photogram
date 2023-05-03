@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginScreen">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.instagramclonekt.view.ui.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_loginScreen"
+            app:destination="@id/loginScreen" />
+        <action
+            android:id="@+id/action_mainFragment_to_addPostScreeenFragment"
+            app:destination="@id/addPostScreeenFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_feedScreenFragment"
+            app:destination="@id/feedScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.example.instagramclonekt.view.ui.LoginScreen"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" >
+        <action
+            android:id="@+id/action_loginScreen_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signIn3"
+        android:name="com.example.instagramclonekt.view.tablayout.SignIn"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signIn3_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPostScreeenFragment"
+        android:name="com.example.instagramclonekt.view.ui.AddPostScreeenFragment"
+        android:label="fragment_add_post_screeen"
+        tools:layout="@layout/fragment_add_post_screeen" >
+        <action
+            android:id="@+id/action_addPostScreeenFragment_to_feedScreenFragment"
+            app:destination="@id/feedScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedScreenFragment"
+        android:name="com.example.instagramclonekt.view.ui.FeedScreenFragment"
+        android:label="fragment_feed_screen"
+        tools:layout="@layout/fragment_feed_screen" />
+</navigation>

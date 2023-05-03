@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.AddPostScreeenFragment"
+    android:background="@drawable/background2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="31dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/selectImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="413dp"
+        android:layout_height="385dp"
+        android:layout_marginBottom="-20dp"
+        android:elevation="15dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/commentText"
+                android:layout_width="345dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10"
+                android:hint="Comment"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="#F8FFFFFF"
+                android:textColorHint="#F8A5A1A1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/placeText"
+                android:layout_width="345dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10"
+                android:hint="Add any place"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="#F8FFFFFF"
+                android:textColorHint="#F8A5A1A1"
+                app:layout_constraintEnd_toEndOf="@+id/commentText"
+                app:layout_constraintStart_toStartOf="@+id/commentText"
+                app:layout_constraintTop_toBottomOf="@+id/commentText" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/shareButton"
+                android:layout_width="345dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg"
+                android:text="Share"
+                app:layout_constraintEnd_toEndOf="@+id/placeText"
+                app:layout_constraintStart_toStartOf="@+id/placeText"
+                app:layout_constraintTop_toBottomOf="@+id/placeText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
